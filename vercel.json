@@ -6,5 +6,11 @@
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb"}
       }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "helloworld/wsgi.py"
+      }
     ]
   }
